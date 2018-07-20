@@ -1,0 +1,14 @@
+body {
+  background-color: darkolivegreen;
+  background-image: url("wild_oliva.png");
+  font-family: 'Roboto', sans-serif;
+  color: beige;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+img {
+  width: 180px;
+}
