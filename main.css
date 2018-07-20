@@ -1,14 +1,42 @@
 body {
+  display: flex;
+  justify-content: center;
   background-color: darkolivegreen;
   background-image: url("wild_oliva.png");
-  font-family: 'Roboto', sans-serif;
   color: beige;
 }
 
-p {
-  font-family: 'Roboto Mono', monospace;
+.container {
+  padding-top: 50px;
+  width: 50%;
 }
 
 img {
-  width: 180px;
+  width: 140px;
+  border-radius: 5px;
+}
+
+.head {
+  display: flex;
+}
+
+.title {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* div {
+  border-style: solid;
+  border-color: aliceblue;
+} */
+
+section {
+  margin-top: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
 }
