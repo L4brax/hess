@@ -8,7 +8,7 @@ body {
 
 .container {
   padding-top: 50px;
-  width: 50%;
+  width: 600px;
 }
 
 img {
@@ -39,4 +39,26 @@ section {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
+}
+
+#logos {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+#logos > a > i {
+  padding: 5px;
+  border: 3px solid beige;
+  border-radius: 5px;
+  max-width: 100px;
+  width: 100%;
+  color: beige;
+  -webkit-transition:  max-width 2s;
+  transition : max-width 0.1s;
+}
+
+#logos > a > i:hover {
+  background-color: beige;
+  color: #3b3b3b;
+  max-width: 120px;
 }
