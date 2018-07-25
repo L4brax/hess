@@ -3,12 +3,13 @@ body {
   justify-content: center;
   background-color: darkolivegreen;
   background-image: url("wild_oliva.png");
+  background-attachment: fixed;
   color: beige;
 }
 
 .container {
   padding-top: 50px;
-  width: 600px;
+  width: 640px;
 }
 
 img {
@@ -26,11 +27,6 @@ img {
   flex-direction: column;
   justify-content: flex-end;
 }
-
-/* div {
-  border-style: solid;
-  border-color: aliceblue;
-} */
 
 section {
   margin-top: 50px;
@@ -61,4 +57,39 @@ h1, h2, h3, h4 {
   background-color: beige;
   color: #3b3b3b;
   max-width: 120px;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+h4 > i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    padding-left : 10px;
+  }
+
+  .title > h1 {
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  .title > h2 {
+    font-size: 20px;
+  }
+
+  img {
+    width: 90px;
+  }
 }
