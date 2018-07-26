@@ -31,7 +31,7 @@
     </div>
     
     <section>
-      <h4><i class="fas fa-chess-pawn"></i>About me</h4>
+      <h4><i class="fab fa-angellist"></i>About me</h4>
       <p>
         Hi ! My name is Antoine, I work in IT since 3 years in Nantes, France. 
         I love web development, learning and reading new things related to new technologies, 
@@ -53,6 +53,20 @@
         <li>HTML5 / CSS3 / SASS</li>
       </ul>
     </section>
+    <div class="background-tile">
+    </div>
   </div>
+  <script>
+    function changeBackground(name) {
+      console.log("OK");
+      document.body.style.backgroundImage='url("backgrounds/'+name+'.png")';
+      console.log('url("backgrounds/'+name+'.png")');
+    }
+    
+    for (i = 1; i < 15; i++) {
+      document.getElementsByClassName('background-tile').innerHTML += '<div onclick="changeBackground('+i+')" background-image: url("backgrounds/'+i+'.png")></div>';
+    }
+    
+  </script>
 </body>
 </html>

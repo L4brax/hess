@@ -59,7 +59,7 @@ h1, h2, h3, h4 {
   max-width: 120px;
 }
 
-a:hover, a:visited, a:link, a:active {
+a {
   text-decoration: none;
 }
 
@@ -92,4 +92,13 @@ h4 > i {
   img {
     width: 90px;
   }
+}
+
+.background-tile > div {
+  border: 2px solid beige;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
