@@ -10,16 +10,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> 
 </head>
 <body>
-  <div id="background-tiles">
-  </div>
+  <div id="background-tiles" onclick=""></div>
   <div class="container">
     <div class="head">
       <div>
         <img src="AntoineH2small.jpg" alt="Me.">
       </div>
       <div class="title">
-        <h1>Hess Antoine</h1>
-        <h2>Full stack developer</h2>
+        <h1>Full stack developer</h1>
+        <h2>Hess Antoine</h2>
       </div>
     </div>
 
@@ -51,14 +50,20 @@
           </ul>
         <li>Java / Spring</li>
         <li>Oracle / MongoDB / CouchBase</li>
-        <li>SEO</li>
+        <li><abbr title="Search Engine Optimization">SEO</abbr></li>
         <li>HTML5 / CSS3 / SASS</li>
+        <li>Security : <abbr title="JSON Web Token">JWT</abbr></li>
       </ul>
     </section>
   </div>
   <script>
     function changeBackground(name) {
       document.body.style.backgroundImage='url("backgrounds/'+name+'.png")';
+    }
+
+    function slide(px) {
+      document.getElementById("background-tiles").style.marginRight = px+'px';
+      console.log(px+'px');
     }
     
     for (i = 1; i < 15; i++) {

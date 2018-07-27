@@ -20,13 +20,19 @@ img {
 }
 
 .head {
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
 }
 
 .title {
   padding-left: 50px;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  justify-content: -ms-flex-end;
+  justify-content: -webkit-flex-end;
   justify-content: flex-end;
 }
 
@@ -51,7 +57,7 @@ h1, h2, h3, h4 {
   max-width: 100px;
   width: 100%;
   color: beige;
-  -webkit-transition:  max-width 2s;
+  -webkit-transition:  max-width 0.1s;
   transition : max-width 0.1s;
 }
 
@@ -76,10 +82,21 @@ h4 > i {
   height: 45px;
   margin-bottom: 5px;
   cursor: pointer;
+  transition: margin-left 0.2s linear; /* vendorless fallback */
+  -o-transition: margin-left 0.2s linear; /* opera */
+  -ms-transition: margin-left 0.2s linear; /* IE 10 */
+  -moz-transition: margin-left 0.2s linear; /* Firefox */
+  -webkit-transition: margin-left 0.2s linear; /*safari and chrome */
+}
+
+#background-tiles > div:hover {
+  animation-duration: 0.2s;
+  animation-name: bounce;
+  animation-timing-function: ease;
 }
 
 #background-tiles {
-  margin-right: 30px;
+  width: 65px;
 }
 
 @media screen and (max-width: 640px) {
@@ -109,4 +126,10 @@ h4 > i {
   img {
     width: 90px;
   }
+}
+
+@keyframes bounce{
+  from {margin-left: 0px;}
+  50%  {margin-left: 10px;}
+  to   {margin-left: 0px;}
 }
