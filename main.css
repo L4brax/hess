@@ -1,4 +1,7 @@
 body {
+  padding-top: 50px;
+  display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   background-color: darkolivegreen;
@@ -8,7 +11,6 @@ body {
 }
 
 .container {
-  padding-top: 50px;
   width: 640px;
 }
 
@@ -68,9 +70,24 @@ h4 > i {
   margin-right: 10px;
 }
 
+#background-tiles > div {
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#background-tiles {
+  margin-right: 30px;
+}
+
 @media screen and (max-width: 640px) {
   .container {
     width: 100%;
+  }
+
+  body {
     padding-top: 0px;
   }
 }
@@ -92,13 +109,4 @@ h4 > i {
   img {
     width: 90px;
   }
-}
-
-.background-tile > div {
-  border: 2px solid beige;
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 5px;
-  cursor: pointer;
 }

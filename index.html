@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> 
 </head>
 <body>
+  <div id="background-tiles">
+  </div>
   <div class="container">
     <div class="head">
       <div>
@@ -53,20 +55,15 @@
         <li>HTML5 / CSS3 / SASS</li>
       </ul>
     </section>
-    <div class="background-tile">
-    </div>
   </div>
   <script>
     function changeBackground(name) {
-      console.log("OK");
       document.body.style.backgroundImage='url("backgrounds/'+name+'.png")';
-      console.log('url("backgrounds/'+name+'.png")');
     }
     
     for (i = 1; i < 15; i++) {
-      document.getElementsByClassName('background-tile').innerHTML += '<div onclick="changeBackground('+i+')" background-image: url("backgrounds/'+i+'.png")></div>';
+      document.getElementById('background-tiles').innerHTML += '<div onclick="changeBackground('+i+')" style="background-image: url(\'backgrounds/'+i+'.png\')"></div>';
     }
-    
   </script>
 </body>
 </html>
