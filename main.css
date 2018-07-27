@@ -4,7 +4,7 @@ body {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  background-color: darkolivegreen;
+  background-color: darkslategrey;
   background-image: url("wild_oliva.png");
   background-attachment: fixed;
   color: beige;
@@ -82,11 +82,11 @@ h4 > i {
   height: 45px;
   margin-bottom: 5px;
   cursor: pointer;
-  transition: margin-left 0.2s linear; /* vendorless fallback */
-  -o-transition: margin-left 0.2s linear; /* opera */
-  -ms-transition: margin-left 0.2s linear; /* IE 10 */
-  -moz-transition: margin-left 0.2s linear; /* Firefox */
-  -webkit-transition: margin-left 0.2s linear; /*safari and chrome */
+  transition: margin-left 0.1s linear; /* vendorless fallback */
+  -o-transition: margin-left 0.1s linear; /* opera */
+  -ms-transition: margin-left 0.1s linear; /* IE 10 */
+  -moz-transition: margin-left 0.1s linear; /* Firefox */
+  -webkit-transition: margin-left 0.1s linear; /*safari and chrome */
 }
 
 #background-tiles > div:hover {
@@ -115,12 +115,12 @@ h4 > i {
   }
 
   .title > h1 {
-    font-size: 25px;
+    font-size: 22px;
     margin: 0px;
   }
 
   .title > h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   img {
