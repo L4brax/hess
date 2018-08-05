@@ -56,14 +56,11 @@ h1, h2, h3, h4 {
   max-width: 100px;
   width: 100%;
   color: beige;
-  -webkit-transition:  max-width 0.1s;
-  transition : max-width 0.1s;
 }
 
 #logos > a > i:hover {
   background-color: beige;
   color: #3b3b3b;
-  max-width: 120px;
 }
 
 a {
@@ -124,14 +121,6 @@ h4 > i {
 
   img {
     width: 90px;
-  }
-
-  #logos > a > i:hover {
-    max-width: 100px;
-  }
-
-  #background-tiles > div:hover {
-    animation: none;
   }
 }
 
