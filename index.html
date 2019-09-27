@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Antoine HESS - Javascript Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> 
-</head>
-<body>
-  <div id="background-tiles" onclick=""></div>
-  <div class="container">
-    <div class="head">
-      <div>
-        <img src="AntoineH2small.jpg" alt="Me.">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Antoine HESS - Javascript Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="background-tiles" onclick=""></div>
+    <div class="container">
+      <div class="head">
+        <div>
+          <img src="AntoineH2small.jpg" alt="Me." />
+        </div>
+        <div class="title">
+          <h1>Full stack developer</h1>
+          <h2>Hess Antoine</h2>
+        </div>
       </div>
-      <div class="title">
-        <h1>Full stack developer</h1>
-        <h2>Hess Antoine</h2>
+
+      <div id="logos">
+        <a href="https://github.com/L4brax" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/antoinehess/?locale=en_US"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
+
+      <section>
+        <h4><i class="fab fa-angellist"></i>About me</h4>
+        <p>
+          Hi ! My name is Antoine, I work in IT since 3 years in Nantes, France.
+          I love web development, learning and reading new things related to new
+          technologies, especially javascript !
+        </p>
+      </section>
+
+      <section>
+        <h4><i class="fas fa-chess-knight"></i>My skills</h4>
+        <ul>
+          <li>Javascript</li>
+          <li>
+            <ul>
+              <li>Front-end : VueJS / Angular</li>
+              <li>Backend : node / Express</li>
+            </ul>
+          </li>
+          <li>Java / Spring</li>
+          <li>MongoDB / Oracle / CouchBase</li>
+          <li><abbr title="Search Engine Optimization">SEO</abbr></li>
+          <li>HTML5 / CSS3 / SASS</li>
+          <li>Security : <abbr title="JSON Web Token">JWT</abbr></li>
+        </ul>
+      </section>
+
+      <section>
+        <h4><i class="far fa-paper-plane"></i>Contact Me</h4>
+        <p>
+          Mail : ant.hess2@gmail.com
+        </p>
+        <p id="cv">
+          CV : <a href="CVHessAntoine2019.pdf" target="_blank">Download</a>
+        </p>
+      </section>
     </div>
+    <script>
+      function changeBackground(name) {
+        document.body.style.backgroundImage =
+          'url("backgrounds/' + name + '.png")';
+      }
 
-    <div id="logos">
-      <a href="https://github.com/L4brax" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/antoinehess/?locale=en_US" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-    
-    <section>
-      <h4><i class="fab fa-angellist"></i>About me</h4>
-      <p>
-        Hi ! My name is Antoine, I work in IT since 3 years in Nantes, France. 
-        I love web development, learning and reading new things related to new technologies, 
-        especially javascript !
-      </p>
-    </section>
+      function slide(px) {
+        document.getElementById('background-tiles').style.marginRight =
+          px + 'px';
+        console.log(px + 'px');
+      }
 
-    <section>
-      <h4><i class="fas fa-chess-knight"></i>My skills</h4>
-      <ul>
-        <li>Javascript</li>
-        <li>
-          <ul>
-            <li>Front-end : VueJS / Angular </li>
-            <li>Backend : node / Express</li>
-          </ul>
-        </li>
-        <li>Java / Spring</li>
-        <li>MongoDB / Oracle / CouchBase</li>
-        <li><abbr title="Search Engine Optimization">SEO</abbr></li>
-        <li>HTML5 / CSS3 / SASS</li>
-        <li>Security : <abbr title="JSON Web Token">JWT</abbr></li>
-      </ul>
-    </section>
-
-    <section>
-      <h4><i class="far fa-paper-plane"></i>Contact Me</h4>
-      <p>
-        Mail : ant.hess2@gmail.com
-      </p>
-      <p id="cv">
-        CV : <a href="CVHessAntoine2018.pdf" target="_blank">Download</a>
-      </p>
-    </section>
-  </div>
-  <script>
-    function changeBackground(name) {
-      document.body.style.backgroundImage='url("backgrounds/'+name+'.png")';
-    }
-
-    function slide(px) {
-      document.getElementById("background-tiles").style.marginRight = px+'px';
-      console.log(px+'px');
-    }
-    
-    for (i = 1; i < 15; i++) {
-      document.getElementById('background-tiles').innerHTML += '<div onclick="changeBackground('+i+')" style="background-image: url(\'backgrounds/'+i+'.png\')"></div>';
-    }
-  </script>
-  <script> 
-    var $buoop = {required:{e:10,f:-3,o:-3,s:-1,c:-3},insecure:true,style:"bottom",api:2018.08 }; 
-    function $buo_f(){ 
-     var e = document.createElement("script"); 
-     e.src = "//browser-update.org/update.min.js"; 
-     document.body.appendChild(e);
-    };
-    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-    catch(e){window.attachEvent("onload", $buo_f)}
-  </script>
-</body>
+      for (i = 1; i < 15; i++) {
+        document.getElementById('background-tiles').innerHTML +=
+          '<div onclick="changeBackground(' +
+          i +
+          ')" style="background-image: url(\'backgrounds/' +
+          i +
+          '.png\')"></div>';
+      }
+    </script>
+    <script>
+      var $buoop = {
+        required: { e: 10, f: -3, o: -3, s: -1, c: -3 },
+        insecure: true,
+        style: 'bottom',
+        api: 2018.08
+      };
+      function $buo_f() {
+        var e = document.createElement('script');
+        e.src = '//browser-update.org/update.min.js';
+        document.body.appendChild(e);
+      }
+      try {
+        document.addEventListener('DOMContentLoaded', $buo_f, false);
+      } catch (e) {
+        window.attachEvent('onload', $buo_f);
+      }
+    </script>
+  </body>
 </html>
