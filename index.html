@@ -22,7 +22,6 @@
     />
   </head>
   <body>
-    <div id="background-tiles" onclick=""></div>
     <div class="container">
       <div class="head">
         <div>
@@ -96,27 +95,6 @@
         </p>
       </section>
     </div>
-    <script>
-      function changeBackground(name) {
-        document.body.style.backgroundImage =
-          'url("backgrounds/' + name + '.png")';
-      }
-
-      function slide(px) {
-        document.getElementById("background-tiles").style.marginRight =
-          px + "px";
-        console.log(px + "px");
-      }
-
-      for (i = 1; i < 15; i++) {
-        document.getElementById("background-tiles").innerHTML +=
-          '<div onclick="changeBackground(' +
-          i +
-          ')" style="background-image: url(\'backgrounds/' +
-          i +
-          ".png')\"></div>";
-      }
-    </script>
     <script>
       var $buoop = {
         required: { e: 10, f: -3, o: -3, s: -1, c: -3 },

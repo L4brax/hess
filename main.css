@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: darkslategrey;
-  background-image: url("wild_oliva.png");
+  background-image: url("backgrounds/7.png");
   background-attachment: fixed;
   color: beige;
 }
@@ -37,11 +37,14 @@ img {
 
 section {
   margin-top: 50px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
 }
 
 #logos {
@@ -72,29 +75,6 @@ h4 > i {
   margin-right: 10px;
 }
 
-#background-tiles > div {
-  border-radius: 5px;
-  width: 45px;
-  height: 45px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  transition: margin-left 0.1s linear; /* vendorless fallback */
-  -o-transition: margin-left 0.1s linear; /* opera */
-  -ms-transition: margin-left 0.1s linear; /* IE 10 */
-  -moz-transition: margin-left 0.1s linear; /* Firefox */
-  -webkit-transition: margin-left 0.1s linear; /*safari and chrome */
-}
-
-#background-tiles > div:hover {
-  animation-duration: 0.2s;
-  animation-name: bounce;
-  animation-timing-function: ease;
-}
-
-#background-tiles {
-  width: 65px;
-}
-
 @media screen and (max-width: 640px) {
   .container {
     width: 100%;
@@ -107,7 +87,7 @@ h4 > i {
 
 @media screen and (max-width: 450px) {
   .title {
-    padding-left : 10px;
+    padding-left: 10px;
   }
 
   .title > h1 {
@@ -128,8 +108,14 @@ h4 > i {
   }
 }
 
-@keyframes bounce{
-  from {margin-left: 0px;}
-  50%  {margin-left: 10px;}
-  to   {margin-left: 0px;}
+@keyframes bounce {
+  from {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
